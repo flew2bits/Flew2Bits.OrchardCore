@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flew2Bits.Media.AWS", "Flew2bits.Media.AWS\Flew2Bits.Media.AWS.csproj", "{4AC78360-CE7F-435F-BC8D-0FA774E85A6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flew2Bits.FileStorage.AWS", "Flew2Bits.FileStorage.AWS\Flew2Bits.FileStorage.AWS.csproj", "{1AD55260-B986-4B9B-8DF1-E9B72F47F6D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flew2Bits.HtmlMenu", "Flew2Bits.HtmlMenu\Flew2Bits.HtmlMenu.csproj", "{F4B8EE0C-7DE7-4DB8-95E4-54D3DC3B085C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flew2Bits.OrchardCore", "Flew2Bits.OrchardCore\Flew2Bits.OrchardCore.csproj", "{A130A6CF-BE07-4CC2-B493-FA91BA5C9882}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrchardCore.Themes", "OrchardCore.Themes", "{1107CBA4-3F23-4FF6-90E3-AE1DC16BEA67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flew2BitsTheBootstrapTheme", "OrchardCore.Themes\Flew2BitsTheBootstrapTheme\Flew2BitsTheBootstrapTheme.csproj", "{0FE010E8-06BF-4405-A36C-405AD3737BD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1202AE41-837F-423F-B925-F6E2C700DE4F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AC78360-CE7F-435F-BC8D-0FA774E85A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC78360-CE7F-435F-BC8D-0FA774E85A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC78360-CE7F-435F-BC8D-0FA774E85A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC78360-CE7F-435F-BC8D-0FA774E85A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AD55260-B986-4B9B-8DF1-E9B72F47F6D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD55260-B986-4B9B-8DF1-E9B72F47F6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD55260-B986-4B9B-8DF1-E9B72F47F6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD55260-B986-4B9B-8DF1-E9B72F47F6D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B8EE0C-7DE7-4DB8-95E4-54D3DC3B085C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B8EE0C-7DE7-4DB8-95E4-54D3DC3B085C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B8EE0C-7DE7-4DB8-95E4-54D3DC3B085C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B8EE0C-7DE7-4DB8-95E4-54D3DC3B085C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A130A6CF-BE07-4CC2-B493-FA91BA5C9882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A130A6CF-BE07-4CC2-B493-FA91BA5C9882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A130A6CF-BE07-4CC2-B493-FA91BA5C9882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A130A6CF-BE07-4CC2-B493-FA91BA5C9882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE010E8-06BF-4405-A36C-405AD3737BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE010E8-06BF-4405-A36C-405AD3737BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE010E8-06BF-4405-A36C-405AD3737BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE010E8-06BF-4405-A36C-405AD3737BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FE010E8-06BF-4405-A36C-405AD3737BD9} = {1107CBA4-3F23-4FF6-90E3-AE1DC16BEA67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DD25DCD-6900-4FBC-85F7-98BD1BCF5205}
+	EndGlobalSection
+EndGlobal

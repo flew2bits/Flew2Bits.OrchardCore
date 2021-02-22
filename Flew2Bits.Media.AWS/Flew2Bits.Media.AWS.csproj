@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="1.0.0-rc2-15874" />
+    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.0.0-rc2-15874" />
+    <PackageReference Include="OrchardCore.Infrastructure.Abstractions" Version="1.0.0-rc2-15874" />
+    <PackageReference Include="OrchardCore.Liquid.Abstractions" Version="1.0.0-rc2-15874" />
+    <PackageReference Include="OrchardCore.Media.Core" Version="1.0.0-rc2-15874" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc2-15874" />
+    <PackageReference Include="OrchardCore.Navigation.Core" Version="1.0.0-rc2-15874" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flew2Bits.FileStorage.AWS\Flew2Bits.FileStorage.AWS.csproj" />
+  </ItemGroup>
+
+</Project>
