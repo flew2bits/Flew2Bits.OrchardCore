@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.FileStorage.Abstractions" Version="1.0.0-rc2-15876" />
-    <PackageReference Include="OrchardCore.Abstractions" Version="1.0.0-rc2-15876" />
+    <PackageReference Include="OrchardCore.FileStorage.Abstractions" Version="1.0.0-rc2-15878" />
+    <PackageReference Include="OrchardCore.Abstractions" Version="1.0.0-rc2-15878" />
   </ItemGroup>
 
   <ItemGroup>
