@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <PreserveCompilationReferences>true</PreserveCompilationReferences>
+    <UserSecretsId>651b5529-ed70-45fb-b73b-3c907905376e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,12 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-rc2-15878" />
-    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc2-15878" />
+    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-rc2-15879" />
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc2-15879" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Flew2Bits.HtmlMenu\Flew2Bits.HtmlMenu.csproj" />
     <ProjectReference Include="..\Flew2bits.Media.AWS\Flew2Bits.Media.AWS.csproj" />
   </ItemGroup>
 
