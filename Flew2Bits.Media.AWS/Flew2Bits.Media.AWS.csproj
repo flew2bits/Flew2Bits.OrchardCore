@@ -19,13 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="1.0.0-rc2-15879" />
-    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.0.0-rc2-15879" />
-    <PackageReference Include="OrchardCore.Infrastructure.Abstractions" Version="1.0.0-rc2-15879" />
-    <PackageReference Include="OrchardCore.Liquid.Abstractions" Version="1.0.0-rc2-15879" />
-    <PackageReference Include="OrchardCore.Media.Core" Version="1.0.0-rc2-15879" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.0.0-rc2-15879" />
-    <PackageReference Include="OrchardCore.Navigation.Core" Version="1.0.0-rc2-15879" />
+    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.Infrastructure.Abstractions" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.Liquid.Abstractions" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.Media.Core" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.Navigation.Core" Version="$(OCTargetVersion)" />
   </ItemGroup>
 
   <ItemGroup>

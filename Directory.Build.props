@@ -1,0 +1,5 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<OCTargetVersion>1.0.0-rc2-15881</OCTargetVersion>
+	</PropertyGroup>
+</Project>
