@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>$(OCTargetFramework)</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
 
@@ -10,10 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc2-15840" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-15840" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-15840" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-15840" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="$(OCTargetVersion)" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="$(OCTargetVersion)" />
   </ItemGroup>
 
   <ItemGroup>
