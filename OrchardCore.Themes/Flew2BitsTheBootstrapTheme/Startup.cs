@@ -9,7 +9,7 @@ namespace OrchardCore.Themes.Flew2BitsTheBootstrapTheme
     {
         public override void ConfigureServices(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddScoped<IResourceManifestProvider, ResourceManifest>();
+            serviceCollection.AddTransient<IConfigureOptions<ResourceManagementOptions>, ResourceManifestOptionsConfiguration>();
         }
     }
 }

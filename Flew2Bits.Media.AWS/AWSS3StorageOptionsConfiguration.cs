@@ -14,6 +14,8 @@ namespace Flew2Bits.Media.AWS
         private readonly ShellSettings _shellSettings;
         private readonly ILogger _logger;
 
+        private readonly FluidParser _fluidParser = new FluidParser();
+
         public AWSS3StorageOptionsConfiguration(
             IShellConfiguration shellConfiguration,
             ShellSettings shellSettings,
@@ -34,9 +36,10 @@ namespace Flew2Bits.Media.AWS
             options.Key = section.GetValue(nameof(options.Key), String.Empty);
             options.EndPoint = section.GetValue(nameof(options.EndPoint), String.Empty);
 
-            var templateContext = new TemplateContext();
-            templateContext.MemberAccessStrategy.Register<ShellSettings>();
-            templateContext.MemberAccessStrategy.Register<AWSS3StorageOptions>();
+            var templateOptions = new TemplateOptions();
+            var templateContext = new TemplateContext(templateOptions);
+            templateOptions.MemberAccessStrategy.Register<ShellSettings>();
+            templateOptions.MemberAccessStrategy.Register<AWSS3StorageOptions>();
             templateContext.SetValue("ShellSettings", _shellSettings);
 
             ParseContainerName(options, templateContext);
@@ -48,7 +51,7 @@ namespace Flew2Bits.Media.AWS
             // Use Fluid directly as this is transient and cannot invoke _liquidTemplateManager.
             try
             {
-                var template = FluidTemplate.Parse(options.BucketName);
+                var template = _fluidParser.Parse(options.BucketName);
 
                 // container name must be lowercase
                 options.BucketName = template.Render(templateContext, NullEncoder.Default).ToLower();
@@ -65,7 +68,7 @@ namespace Flew2Bits.Media.AWS
         {
             try
             {
-                var template = FluidTemplate.Parse(options.BasePath);
+                var template = _fluidParser.Parse(options.BasePath);
 
                 options.BasePath = template.Render(templateContext, NullEncoder.Default);
                 options.BasePath = options.BasePath.Replace("\r", String.Empty).Replace("\n", String.Empty);
