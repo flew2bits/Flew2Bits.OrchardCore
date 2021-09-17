@@ -12,7 +12,7 @@ WORKDIR /src/Flew2Bits.OrchardCore/Flew2Bits.OrchardCore
 RUN dotnet build Flew2Bits.OrchardCore.csproj -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Flew2Bits.OrchardCore/Flew2Bits.OrchardCore.csproj" -c Release -o /app/publish
+RUN dotnet publish Flew2Bits.OrchardCore.csproj -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
