@@ -1,6 +1,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
-    <OCTargetFramework>net5.0</OCTargetFramework>
-		<OCTargetVersion>1.1.0-preview-16476</OCTargetVersion>
+    <OCTargetFramework>net6.0</OCTargetFramework>
+		<OCTargetVersion>1.4.0</OCTargetVersion>
 	</PropertyGroup>
 </Project>

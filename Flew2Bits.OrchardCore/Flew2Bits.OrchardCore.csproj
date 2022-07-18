@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Flew2bits.Media.AWS\Flew2Bits.Media.AWS.csproj" />
+    <ProjectReference Include="..\Flew2Bits.Media.AWS\Flew2Bits.Media.AWS.csproj" />
   </ItemGroup>
 
 </Project>
